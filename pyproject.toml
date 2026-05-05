@@ -1,0 +1,9 @@
+[project]
+name = "databases-patrik-hellgren"
+version = "0.1.0"
+description = "Program connecting to a database for a bookstore."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "sqlalchemy>=2.0.49",
+]
