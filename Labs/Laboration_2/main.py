@@ -36,7 +36,8 @@ try:
     clear_terminal()
 
     engine = create_engine(url=CONNECTION_STRING)
-    engine.connect()
+    with engine.connect() as conn:
+        pass # testing connection before moving on
 
     SessionLocal = sessionmaker(bind=engine, autoflush=False)
 except:
